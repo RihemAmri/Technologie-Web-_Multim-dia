@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f7f7f7;
+    }
+    h1 {
+      color: #333;
+    }
+    #taskInput {
+      padding: 10px;
+      width: 250px;
+    }
+    #addBtn {
+      padding: 10px;
+      margin-left: 5px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: white;
+      margin: 5px 0;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .completed {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1>To-Do List</h1>
+  <input type="text" id="taskInput" placeholder="Nouvelle tâche...">
+  <button id="addBtn">Ajouter</button>
+  <input type="text" id="searchInput" placeholder="Rechercher une tâche...">
+
+  <ul id="taskList"></ul>
+  <p id="compteur"></p>
+<button onclick="toutSupprimer()">Tout supprimer</button>
+
+  <script src="page.js"></script>
+</body>
+</html>
